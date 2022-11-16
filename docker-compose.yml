@@ -4,7 +4,7 @@ services:
   php:
     build:
       context: .
-      dockerfile: Docker—
+      dockerfile: Dockerfile
     ports:
       - "1234:80"
     restart: always
@@ -29,3 +29,5 @@ services:
 
 volumes:
   db_data:
+
+
