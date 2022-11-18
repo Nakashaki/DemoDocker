@@ -14,5 +14,6 @@ CREATE TABLE IF NOT EXISTS Post
 (
     id      INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     content TEXT,
+    test int,
     author  int NOT NULL
 );
