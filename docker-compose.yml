@@ -15,19 +15,19 @@ services:
     image: mariadb
     restart: always
     environment:
-      MARIADB_DATABASE: data
+      MARIADB_DATABASE: blog
       MARIADB_ROOT_PASSWORD: password
     volumes:
-      - ./migration/dump.sql:/docker-entrypoint-initdb.d/db_data.sql
-      - db_data:/var/lib/mysql
+      - ./migration/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+      #- db_data:/var/lib/mysql
 
   adminer:
     image: adminer
     restart: always
     ports:
-      - "1414:8080"
+      - "1616:8080"
 
-volumes:
-  db_data:
+#volumes:
+#  db_data:
 
 
