@@ -6,6 +6,11 @@ $pdo = new PDO("mysql:host=database;dbname=blog", "root", "password");
 
 require_once 'vendor/autoload.php';
 
+
+
+
+
+
 $url = "/" . trim(explode("?", $_SERVER['REQUEST_URI'])[0], "/");
 
 switch ($url) {
